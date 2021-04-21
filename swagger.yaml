@@ -1,0 +1,29 @@
+swagger: "2.0"
+info:
+  title: Auth Service API
+  description: API Specificatoin for Auth Service.
+  version: 1.0.0
+host: ""
+basePath: /api
+schemes:
+  - https
+  - http
+paths:
+  /signup:
+    get:
+      summary: Returns a list of users.
+      description: A user can be signed up with a username, password and an email.
+      produces:
+        - application/json
+      responses:
+        200:
+          description: OK
+      security:
+        - Authorization: []
+  
+securitySchemes:
+    Authorization:
+      type: http
+      in: header
+      scheme: bearer
+      description: SSO Access Token

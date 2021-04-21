@@ -1,0 +1,15 @@
+{
+    "swaggerDefinition":{
+        "info": {
+            "title": "Auth Service API",
+            "description": "Documentation for Auth Service API",
+            "version": "v1.0",
+            "contact": {
+                "name": "Zico"
+            },
+            "servers": ["http://localhost:8080/api/", ""]
+        }
+    },
+    "apis": ["./swagger.yaml"],
+    "basePath": "/api/v1"
+}
